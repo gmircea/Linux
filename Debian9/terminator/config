@@ -1,0 +1,105 @@
+[global_config]
+  window_state = fullscreen
+[keybindings]
+  switch_to_tab_1 = <Alt>1
+  switch_to_tab_10 = <Alt>0
+  switch_to_tab_2 = <Alt>2
+  switch_to_tab_3 = <Alt>3
+  switch_to_tab_4 = <Alt>4
+  switch_to_tab_5 = <Alt>5
+  switch_to_tab_6 = <Alt>6
+  switch_to_tab_7 = <Alt>7
+  switch_to_tab_8 = <Alt>8
+  switch_to_tab_9 = <Alt>9
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+  [[Adv]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 0:31
+      size = 1920, 1020
+      title = mircea@echelon: ~
+      type = Window
+    [[[child1]]]
+      active_page = 3
+      labels = root, work, build/flash, screen, work
+      last_active_term = 5034ae24-9ddf-42c1-b904-d26943323a42, 3e72eaeb-a1f3-4494-9581-e2d0e06dc981, 97e207ef-d3b7-41c2-a335-e05bd63d1287, 68cf6799-2804-4bd4-a020-213cbbd9ff8f, 52d8acd2-c926-4c77-a618-26eec59e32a0
+      order = 0
+      parent = child0
+      type = Notebook
+    [[[child4]]]
+      order = 2
+      parent = child1
+      position = 541
+      ratio = 0.545362903226
+      type = VPaned
+    [[[child6]]]
+      order = 1
+      parent = child4
+      position = 1565
+      ratio = 0.815954118874
+      type = HPaned
+    [[[terminal10]]]
+      directory = /media/mircea/ExtLinux/Adventure/Builds
+      order = 4
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 52d8acd2-c926-4c77-a618-26eec59e32a0
+    [[[terminal2]]]
+      directory = /etc
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 5034ae24-9ddf-42c1-b904-d26943323a42
+    [[[terminal3]]]
+      directory = /media/mircea/ExtLinux/Adventure/Builds
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 3e72eaeb-a1f3-4494-9581-e2d0e06dc981
+    [[[terminal5]]]
+      directory = /media/mircea/ExtLinux/Adventure/Builds
+      order = 0
+      parent = child4
+      profile = default
+      type = Terminal
+      uuid = 97e207ef-d3b7-41c2-a335-e05bd63d1287
+    [[[terminal7]]]
+      directory = /media/mircea/ExtLinux/Adventure/Builds
+      order = 0
+      parent = child6
+      profile = default
+      type = Terminal
+      uuid = bf3d7f5a-3791-4020-95d7-9d91be97cb35
+    [[[terminal8]]]
+      directory = /media/mircea/ExtLinux/Adventure/Builds
+      order = 1
+      parent = child6
+      profile = default
+      type = Terminal
+      uuid = a5b13ce3-3326-42fe-8ac0-c51cec34322f
+    [[[terminal9]]]
+      directory = /media/mircea/ExtLinux/Adventure/Builds
+      order = 3
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 68cf6799-2804-4bd4-a020-213cbbd9ff8f
+[plugins]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"

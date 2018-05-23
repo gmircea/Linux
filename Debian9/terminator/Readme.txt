@@ -1,0 +1,1 @@
+/home/mircea/.config/terminator/config 
