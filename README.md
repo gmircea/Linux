@@ -1,1 +1,1 @@
-# debian
+# Linux configs
