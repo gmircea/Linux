@@ -9,3 +9,9 @@ alias paci="pacman -S"
 
 #info
 alias pacinfo="pacman -Si"
+
+#package contents: pacman list
+alias pacl="pacman -Ql"
+
+#clean cache
+#pacman -Sc
