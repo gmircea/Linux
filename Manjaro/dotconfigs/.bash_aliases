@@ -15,3 +15,7 @@ alias pacl="pacman -Ql"
 
 #clean cache
 #pacman -Sc
+
+#who provides
+#pacman -Fo /usr/bin/chromium
+alias pacprovides="pacman -Fo"
