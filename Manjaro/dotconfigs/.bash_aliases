@@ -5,7 +5,7 @@ alias pacs="pacman -Ss"
 alias pacu="sudo pacman -Syu"
 
 #install
-alias paci="pacman -S"
+alias paci="sudo pacman -S"
 
 #info
 alias pacinfo="pacman -Si"
@@ -19,3 +19,10 @@ alias pacl="pacman -Ql"
 #who provides
 #pacman -Fo /usr/bin/chromium
 alias pacprovides="pacman -Fo"
+
+alias tmp='mkdir /tmp/$$ ; cd /tmp/$$'
+alias untmp='rm -rf /tmp/$$'
+
+alias wtr='curl wttr.in/~targu+mures'
+
+alias youtube='mpsyt'
