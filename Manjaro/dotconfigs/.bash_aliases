@@ -26,3 +26,5 @@ alias untmp='rm -rf /tmp/$$'
 alias wtr='curl wttr.in/~targu+mures'
 
 alias youtube='mpsyt'
+
+alias ip="ip -c"
