@@ -33,6 +33,9 @@ colors() {
 
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
 
+# https://fedoraproject.org/wiki/Git_quick_reference
+[ -r /usr/share/git/completion/git-prompt.sh ] && . /usr/share/git/completion/git-prompt.sh
+
 # Change the window title of X terminals
 case ${TERM} in
 	xterm*|rxvt*|Eterm*|aterm|kterm|gnome*|interix|konsole*)
@@ -59,6 +62,13 @@ match_lhs=""
 	&& match_lhs=$(dircolors --print-database)
 [[ $'\n'${match_lhs} == *$'\n'"TERM "${safe_term}* ]] && use_color=true
 
+# Git show changes in prompt
+# * = a tracked file was modified
+# + = a tracked file was modified and staged (with git add)
+# % = you have untracked files in your tree
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=true
+
 if ${use_color} ; then
 	# Enable colors for ls, etc.  Prefer ~/.dir_colors #64489
 	if type -P dircolors >/dev/null ; then
@@ -73,7 +83,7 @@ if ${use_color} ; then
 		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
 	else
 		Green='\[\033[01;32m\]'
-		PS1=$Green'[${timer_show}][\D{%T}]\[\033[01;32m\][\u@\h\[\033[01;37m\] \w\[\033[01;32m\]]\n\$\[\033[00m\] '
+		PS1=$Green'[${timer_show}][\D{%T}]\[\033[01;32m\][\u@\h\[\033[01;37m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;32m\]]\n\$\[\033[00m\] '
 		#original:
 		#PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
 	fi
