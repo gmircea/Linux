@@ -28,3 +28,7 @@ alias wtr='curl wttr.in/~targu+mures'
 alias youtube='mpsyt'
 
 alias ip="ip -c"
+
+alias gdt="git difftool 2> /dev/null"
+alias gst="git status"
+alias gg="broot --conf ~/.config/broot/git-diff-conf.toml --git-status"

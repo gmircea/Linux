@@ -214,3 +214,5 @@ fi
 #http://klimer.eu/2015/05/01/use-midnight-commander-like-a-pro/
 #alias mc='. /usr/share/mc/bin/mc-wrapper.sh'
 alias mc='. /usr/lib/mc/mc-wrapper.sh'
+
+bind 'set enable-bracketed-paste off'
